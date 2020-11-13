@@ -18,9 +18,6 @@ int main () {
     
     int zahl1, zahl2;
 
-    // Keine Anforderung - aber sinnvoll:
-    // Header und Hilfe anzeigen - mangels Anforderung nicht umgesetzt
-
     for (;;) {
         printf("Bitte geben Sie die erste Zahl ein (ganze Zahl):");
         scanf("%d", &zahl1);
