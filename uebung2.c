@@ -38,6 +38,12 @@ int main () {
         printf("Die Differenz von %d und %d ist: %d\n", zahl1, zahl2, zahl1 - zahl2);
         printf("Das Produkt von %d und %d ist: %d\n", zahl1, zahl2, zahl1 * zahl2);
         printf("Der Quotient von %d und %d ist: %f\n", zahl1, zahl2, (float)zahl1 / zahl2);
+        
+        // Achtung Falle:
+        // Sollte die Eingabe ein negatives Vorzeichen haben, würde eine einfache
+        // Modulo-Funktion einen falschen Wert liefern. Um korrekte Ergebnisse zu 
+        // erzielen, muss der Modulo-Operand noch einmal addiert und anschließend
+        // durch erneute Modulo-Operation berechnet werden. 
         printf("Der Divisionsrest von %d und %d ist: %f\n\n", zahl1, zahl2, (float)(((zahl1 % zahl2) + zahl2) % zahl2));
     }
 
