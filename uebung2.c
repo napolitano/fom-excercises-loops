@@ -15,7 +15,7 @@
  * @return int 
  */
 int main () {
-    
+   
     int zahl1, zahl2;
 
     for (;;) {
